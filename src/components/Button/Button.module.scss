@@ -1,0 +1,16 @@
+@import "styles/core/all.scss";
+
+.button {
+  font-size: 15px;
+  border-radius: 999px;
+  border: 1px solid $dark;
+  padding: 5px 35px;
+  display: inline-block;
+  cursor: pointer;
+
+  &.isLarge {
+    font-size: 22px;
+    border: 2px solid $green4;
+    color: $green4;
+  }
+}

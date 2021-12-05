@@ -1,0 +1,44 @@
+@import "styles/core/all.scss";
+
+.basicWrap {
+  display: flex;
+  // align-items: center;
+  padding: 62px 0;
+}
+.basicImg {
+  width: 674px;
+
+  @include max-l2 {
+    width: 550px;
+  }
+}
+.basicContent {
+  margin-left: 60px;
+  flex: 1;
+}
+
+.basicList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.listItem {
+  font-size: 25px;
+  width: calc(100% / 2);
+  margin-bottom: 37px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    border: 2px solid $green1;
+    border-radius: 50%;
+    left: 0;
+  }
+}

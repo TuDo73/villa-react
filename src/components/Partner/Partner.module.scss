@@ -1,0 +1,17 @@
+@import "styles/core/all.scss";
+
+.partner {
+  padding: 55px 0;
+  background: $light;
+}
+
+.brandList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.brandItem {
+  padding: 0 30px;
+}

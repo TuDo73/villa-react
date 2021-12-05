@@ -1,0 +1,79 @@
+@import "styles/core/all.scss";
+
+.hero {
+  position: relative;
+  .sliderWrap {
+    height: calc(100vh - 150px);
+  }
+
+  .heroSlider {
+    height: 100%;
+  }
+
+  .sliderItem {
+    height: 100%;
+    @include background-image;
+  }
+
+  .container {
+    @extend %container;
+    height: 100%;
+  }
+
+  .itemContent {
+    color: $light;
+    max-width: 678px;
+    position: relative;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  .heroHeading {
+    display: inline-block;
+    padding-bottom: 7.5px;
+    padding-right: 50px;
+    border-bottom: 2px solid $light;
+  }
+}
+
+.heroCircles {
+  position: absolute;
+  z-index: 1;
+  bottom: -160px;
+  width: 100%;
+}
+.circleList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+
+  .listItem {
+    width: 269px;
+    height: 269px;
+    border: 2px solid $green1;
+    border-radius: 50%;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: $green1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .itemTitle {
+    margin-top: 14px;
+  }
+}

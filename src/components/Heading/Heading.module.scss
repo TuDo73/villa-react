@@ -1,0 +1,16 @@
+@import "styles/core/all.scss";
+
+.heading {
+  margin-bottom: 20px;
+}
+.isDark {
+  color: $black;
+}
+
+.isCenter {
+  text-align: center;
+}
+
+.isNormal {
+  text-transform: capitalize;
+}

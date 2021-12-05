@@ -1,0 +1,28 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: $light;
+  background: $green3;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+
+  &::after {
+    position: absolute;
+  }
+}
+
+.swiper-button-prev {
+  left: -70px;
+
+  &::after {
+    left: 80px;
+  }
+}
+.swiper-button-next {
+  right: -70px;
+  &::after {
+    right: 80px;
+  }
+}
